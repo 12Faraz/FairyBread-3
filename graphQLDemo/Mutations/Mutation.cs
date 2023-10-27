@@ -13,8 +13,8 @@ namespace graphQLDemo.Mutations
         }
 
         //[Validate(typeof(CreateUserInputValidator)]
-        [Error(typeof(CreateUserInputValidator))]
-        [UseMutationConvention()]
+        //[Error(typeof(CreateUserInputValidator))]
+        //[UseMutationConvention()]
         public List<CourseResult> CreateCourse([Validate(typeof(CreateUserInputValidator))] CourseInputType courseInputType)
         {
             CourseResult courseType = new CourseResult()

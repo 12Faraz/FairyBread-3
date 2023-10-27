@@ -9,6 +9,8 @@ namespace graphQLDemo
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddScoped<CreateUserInputValidator>();
+
             services.AddTransient<IValidator<CourseInputType>, CreateUserInputValidator>();
 
             services.AddGraphQLServer()
